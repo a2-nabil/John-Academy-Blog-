@@ -25,6 +25,7 @@ ol {
 
 .a2n_blog_btn {
   display: inline-block;
+  white-space: nowrap;
   color: #f16232;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -262,7 +263,7 @@ ol {
   background: transparent;
   transition: all 0.3s ease;
   padding: 10px;
-  margin: 0 6px;
+  margin: 12px 6px;
   width: 36px;
   height: 36px;
   display: inline-flex;
@@ -287,4 +288,50 @@ ol {
   color: #ffffff;
 }
 
-/* #blog Card area css end   *//*# sourceMappingURL=styles.css.map */
+/* #blog Card area css end   */
+/* #Blog Area Responsive Start */
+@media (max-width: 1024px) {
+  .a2n_blog-card_container {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .a2n_blog_area {
+    padding: 50px 15px;
+  }
+  .a2n_blog_area .hero_content h2 {
+    font-size: 36px;
+  }
+  .a2n_blog_area .hero_content h6 {
+    font-size: 14px;
+    margin: 16px 0 30px;
+  }
+  .a2n_blog_area .a2n-blog__container {
+    margin-top: 50px;
+    padding: 30px 20px 20px;
+  }
+  .a2n_blog_area .a2n-blog__container .blog_tip h3 {
+    font-size: 18px;
+  }
+  .a2n_blog_area .a2n-blog__container .a2n-inner__items {
+    flex-wrap: wrap;
+  }
+  .a2n_blog_area .a2n-blog__container .a2n-inner__items .a2n_item h2 {
+    font-size: 24px;
+  }
+  .a2n_blog_area .a2n-blog__container > p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .a2n_blog-card_area {
+    padding: 50px 15px;
+  }
+  .a2n_blog-card_container {
+    grid-template-columns: 1fr;
+  }
+  #a2n_blog-paginations {
+    margin-top: 40px;
+  }
+}
+/* #Blog Area Responsive End *//*# sourceMappingURL=styles.css.map */
